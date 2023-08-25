@@ -1,0 +1,14 @@
+{
+  "name": "kalviumbackend",
+  "version": "1.0.0",
+  "description": "This is server that response to mathematical operations send via URL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faisal Nazir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
