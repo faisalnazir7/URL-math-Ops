@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalvium Backend Task</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h3>Sample Responses</h3>
+    <div>
+        <table>
+            <tr>
+              <th>End Point</th>
+              <th>GET Request</th>
+              <th>Respose</th>
+            </tr>
+            <tr>
+              <td>Home</td>
+              <td>/</td>
+              <td>HTML
+                Lists all the get endpoint samples you can demo</td>
+            </tr>
+            <tr>
+              <td>History</td>
+              <td>/history</td>
+              <td>HTML
+                Lists the last 20 operations performed on the server, and the answers.</td>
+            <tr>
+              <td>Example 1</td>
+              <td>/5/plus/3</td>
+              <td>JSON
+                {question:”5+3”,answer: 8}
+                </td>
+            </tr>
+            <tr>
+              <td>Example 2</td>
+              <td>/3/minus/5</td>
+              <td>JSON
+                {question:”3-5”, answer: -2}                
+                </td>
+            </tr>
+            <tr>
+              <td>Example 3</td>
+              <td>/3/minus/5/plus/8</td>
+              <td>JSON
+                {question:”3-5+8”, answer: 6}                                
+                </td>
+            </tr>
+            <tr>
+              <td>Example 4</td>
+              <td>/3/into/5/plus/8/into/6</td>
+              <td>JSON
+                {question:”3*5+8*6”, answer: 63}                                
+                </td>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>
