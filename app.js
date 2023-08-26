@@ -65,7 +65,7 @@ app.get("*", (req, res) => {
 
     // Limiting history length to 20
     if (history.length > 20) {
-      history.pop();
+      history.shift();
     }
 
     // Append operation data to historyData.json
