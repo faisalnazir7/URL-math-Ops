@@ -29,6 +29,17 @@ This is a server that responds to mathematical operations sent via URL.
     ```
     npm install
     ```
+    ##### Run Docker Container(Optional):
+    To build the Docker image, navigate to the project directory in your terminal and run:
+    ```
+    docker build -t kalvium-backend .
+    ```
+
+    And then to run the container:
+    ```
+    docker run -p 3000:3000 kalvium-backend
+    ```
+Make sure you have Docker installed and running on your machine before using these commands.
 ## Usage
 ##### Start the Server
 To start the server, run the following command:
