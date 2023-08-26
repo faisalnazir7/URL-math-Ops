@@ -19,6 +19,14 @@ const operations = {
   divide: "/",
 };
 
+// Array to store history of operations
+const history = [];
+
+// History Route
+app.get("/history", (req, res) => {
+    res.json(history);
+  });
+
 // Operation Route
 app.get("*", (req, res) => {
   const route = req.params[0].split("/").slice(1);
@@ -44,6 +52,14 @@ app.get("*", (req, res) => {
       question: expressionString,
       answer,
     };
+
+    // Adding operation data to history
+    history.unshift(operationData);
+
+    // Limiting history length to 20
+    if (history.length > 20) {
+      history.pop();
+    }
 
     return res.json(operationData);
   } catch (error) {
