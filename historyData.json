@@ -22,5 +22,61 @@
   {
     "question": "1+6",
     "answer": 7
+  },
+  {
+    "question": "3*5+8*6",
+    "answer": 63
+  },
+  {
+    "question": "3-5+8",
+    "answer": 6
+  },
+  {
+    "question": "3-5",
+    "answer": -2
+  },
+  {
+    "question": "5+3",
+    "answer": 8
+  },
+  {
+    "question": "3+7",
+    "answer": 10
+  },
+  {
+    "question": "20/5",
+    "answer": 4
+  },
+  {
+    "question": "20/2",
+    "answer": 10
+  },
+  {
+    "question": "20/2+1",
+    "answer": 11
+  },
+  {
+    "question": "20/2+1-4",
+    "answer": 7
+  },
+  {
+    "question": "20/3",
+    "answer": 6.666666666666667
+  },
+  {
+    "question": "999/3",
+    "answer": 333
+  },
+  {
+    "question": "999/333",
+    "answer": 3
+  },
+  {
+    "question": "999/99",
+    "answer": 10.090909090909092
+  },
+  {
+    "question": "777777702/2",
+    "answer": 388888851
   }
 ]
