@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .history-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .history-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .serial-number {
+      min-width: 30px;
+      text-align: center;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .answer {
+      margin-top: 5px;
+    }
+
+    /* Responsive layout for the history list */
+    @media (max-width: 600px) {
+      .history-item {
+        font-size: 14px;
+      }
+
+      .serial-number {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>History Page</h1>
+    <ul class="history-list">
+      <% history.forEach((entry, index) => { %>
+        <li class="history-item">
+          <span class="serial-number"><%= index + 1 %></span>
+          <div class="question">Question: <%= entry.question %></div>
+          <div class="answer"><strong>Answer:</strong> <%= entry.answer %></div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</body>
+</html>

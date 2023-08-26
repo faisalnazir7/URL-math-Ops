@@ -3,6 +3,12 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 3000;
+const appendData = require('./utils/appendData');
+const readData = require('./utils/readData');
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // To Serve static files
 app.use(express.static(path.join(__dirname, "public")));
@@ -24,15 +30,16 @@ const history = [];
 
 // History Route
 app.get("/history", (req, res) => {
-    res.json(history);
-  });
+    const historyData = readData(); // Read history data from historyData.json
+    res.render('history', { history: historyData });
+  });  
 
 // Operation Route
 app.get("*", (req, res) => {
   const route = req.params[0].split("/").slice(1);
   const expression = [];
 
-  //Breakdown of route into segments
+  // Breakdown of route into segments
   for (const segment of route) {
     if (segment in operations) {
       expression.push(operations[segment]);
@@ -43,7 +50,7 @@ app.get("*", (req, res) => {
     }
   }
 
-  //For Mathematical Operation Response
+  // For Mathematical Operation Response
   try {
     const expressionString = expression.join("");
     const answer = eval(expressionString);
@@ -60,6 +67,9 @@ app.get("*", (req, res) => {
     if (history.length > 20) {
       history.pop();
     }
+
+    // Append operation data to historyData.json
+    appendData(operationData);
 
     return res.json(operationData);
   } catch (error) {
