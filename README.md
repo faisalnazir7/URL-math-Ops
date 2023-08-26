@@ -6,6 +6,8 @@ This is a server that responds to mathematical operations sent via URL.
 
 - [Kalvium Backend Task](#kalvium-backend-task)
   - [Table of Contents](#table-of-contents)
+  - [Try Live](#try-live)
+          - [\>\>Live End Point:](#live-end-point)
   - [Installation](#installation)
   - [Usage](#usage)
         - [Start the Server](#start-the-server)
@@ -15,15 +17,21 @@ This is a server that responds to mathematical operations sent via URL.
   - [History Page](#history-page)
   - [License](#license)
 
+## Try Live
+
+###### >>Live End Point:
+```
+https://kalviumbackend.onrender.com/
+```
 ## Installation
 
 1. Clone this repository to your local machine:
    ```
-   git clone https://github.com/your-username/kalvium-backend.git
+   git clone https://github.com/faisalnazir7/kalviumBackendTask.git
 2. Navigate to the project directory:
 
     ```
-    cd kalvium-backend
+    cd kalviumBackendTask
     ```
 3. Install the required dependencies:
     ```
