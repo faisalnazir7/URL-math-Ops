@@ -1,10 +1,10 @@
-# Kalvium Backend Task
+# URL math Ops
 
 This is a server that responds to mathematical operations sent via URL.
 
 ## Table of Contents
 
-- [Kalvium Backend Task](#kalvium-backend-task)
+- [URL math Ops](#url-math-ops)
   - [Table of Contents](#table-of-contents)
   - [Try Live](#try-live)
           - [\>\>Live End Point:](#live-end-point)
@@ -21,17 +21,17 @@ This is a server that responds to mathematical operations sent via URL.
 
 ###### >>Live End Point:
 ```
-https://kalviumbackend.onrender.com/
+https://urlmathops.onrender.com/
 ```
 ## Installation
 
 1. Clone this repository to your local machine:
    ```
-   git clone https://github.com/faisalnazir7/kalviumBackendTask.git
+   git clone https://github.com/faisalnazir7/URL-math-Ops.git
 2. Navigate to the project directory:
 
     ```
-    cd kalviumBackendTask
+    cd URL-math-Ops
     ```
 3. Install the required dependencies:
     ```
@@ -40,12 +40,12 @@ https://kalviumbackend.onrender.com/
     ##### Run Docker Container(Optional):
     To build the Docker image, navigate to the project directory in your terminal and run:
     ```
-    docker build -t kalvium-backend .
+    docker build -t URL-math-Ops .
     ```
 
     And then to run the container:
     ```
-    docker run -p 3000:3000 kalvium-backend
+    docker run -p 3000:3000 URL-math-Ops
     ```
 Make sure you have Docker installed and running on your machine before using these commands.
 ## Usage
